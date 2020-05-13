@@ -1,0 +1,96 @@
+/* Base styles */
+*	
+	{
+		box-sizing: border-box;
+		font-family: Georgia, Arial, serif;
+		margin: 0;
+	}
+
+h1
+	{
+		font-size: 175%;
+	}
+
+h2
+	{
+		font-size: 25%;
+	}
+
+p
+	{
+		clear: both;
+		text-align: left;
+		margin: 15px;
+	}
+
+section
+	{
+		float: right;
+		font-size: 125%;
+		border-style: solid;
+		border-color: black;
+		padding: 5px;
+		width: 100px;
+		border-top: 0;
+		border-right: 0;
+		margin-bottom: 15px;
+	}
+
+article
+	{
+		border-style: solid;
+		border-color: black;
+		margin-top: 20px;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+.title
+	{
+		font-weight: bold;
+		text-align: center;
+	}
+
+/* Simple responsive framework */
+
+.row
+	{
+		width: 100%;
+	}
+
+
+/* Media queries */
+@media (min-width: 992px)
+	{
+		.col-lg-4
+			{
+				float: left;
+				width: 33.33%
+			}
+	}
+
+@media (min-width: 768px) and (max-width: 991px)
+	{
+		.col-md-6,.col-md-12
+			{
+				float: left;
+			}
+		.col-md-6
+			{
+				width: 50%
+			}
+		.col-md-12
+			{
+				width: 100%
+			}
+	}
+
+@media (max-width: 767px)
+	{
+		.col-sm-12
+			{
+				float: left;
+				width: 100%
+			}
+	}
+/*  */
