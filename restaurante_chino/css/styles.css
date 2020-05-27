@@ -100,3 +100,76 @@ body
 		text-align: right;
 		padding-right: 15px;
 	}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar
+	{
+		border: 1px;
+		border-style: solid;
+		border-color: #61122F;
+	}
+
+.navbar-header button.navbar-toggle
+	{
+		clear: both;
+		margin-top: -30px;
+	}
+/* END OF HEADER */
+
+
+/* Large devices only */
+@media (min-width:  1200px)
+	{
+
+	}
+
+/* Medium devices only */
+@media (min-width: 992px) and (max-width: 1199px)
+	{
+		/* HEADER */
+		#logo-img
+			{
+				background: url('../images/restaurant-logo_medium.png') no-repeat;
+				width: 100px;
+				height: 100px;
+				margin-top: 5px;
+				margin-right: 5px;
+				margin-bottom: 5px;
+				margin-left: 0px;
+			}
+		/* END OF HEADER */
+	}
+
+/* Small devices only */
+@media (min-width: 768px) and (max-width: 991px)
+	{
+
+	}
+
+/* Extra small devices only */
+@media (max-width: 767px)
+	{
+		/* HEADER */
+		.navbar-brand
+			{
+				padding-top: 10px;
+				height: 80px;
+			}
+
+		.navbar-brand h1
+			{
+				padding-top: 10px;
+				font-size: 5vw; /*1vw = 1% del andcho del viewport*/
+			}
+
+		.navbar-brand p
+			{
+				font-size: 0.6em;
+				margin-top: 12px;
+			}
+
+		.navbar-brand p img
+			{
+				height: 20px;
+			}
+		/* END OF HEADER */
+	}
