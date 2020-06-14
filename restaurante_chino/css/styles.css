@@ -116,6 +116,7 @@ body
 /* END OF HEADER */
 
 
+/* HOME PAGE */
 .container .jumbotron
 	{
 		box-shadow: 0 0 50px #3F0C1F;
@@ -124,6 +125,49 @@ body
 		border-color: #3F0C1F;
 	}
 
+#menu-tile, #specials-tile, #map-tile
+	{
+		height: 250px;
+		width: 100%;
+		margin-bottom: 15px;
+		position: relative;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #3F0C1F;
+		overflow: hidden;
+	}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover
+	{
+		box-shadow: 0px 1px 5px 1px #CCCCCC;
+	}
+
+#menu-tile
+	{
+		background: url('../images/menu-tile.jpg') no-repeat;
+		background-position: center;
+	}
+
+#specials-tile
+	{
+		background: url('../images/specials-tile.jpg') no-repeat;
+		background-position: center;
+	}
+
+#menu-tile span, #specials-tile span, #map-tile span
+	{
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		width: 100%;
+		text-align: center;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		background: #000000;
+		color: #FFFFFF;
+		opacity: 0.8;
+	}
+/* END OF HOME PAGE */
 
 /* Large devices only */
 @media (min-width:  1200px)
@@ -231,9 +275,36 @@ body
 			}
 		/* END OF HEADER */
 
+		/* HOME PAGE*/
 		.container .jumbotron
 			{
 				margin-top: 30px;
 				padding: 0px;
+			}
+
+		#menu-tile, #specials-tile
+			{
+				width: 360px;
+				margin: 0px auto 15px;
+			}
+
+		/* END OF HOME PAGE*/
+
+	}
+
+/* Super extra small devices only */
+@media (max-width: 479px)
+	{
+		/* HEADER */
+		.navbar-brand h1
+			{
+				padding-top: 5px;
+				font-size: 6vw;
+			}
+		/* HOME PAGE*/
+		#menu-tile, #specials-tile
+			{
+				width: 280px;
+				margin: 0px auto 15px auto;
 			}
 	}
