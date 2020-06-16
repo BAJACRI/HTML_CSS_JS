@@ -1,0 +1,174 @@
+*	{
+		box-sizing: border-box;
+	}
+
+body
+	{
+		margin: 0;
+		padding: 0;
+		background-color: #FFFFFF;
+	}
+
+h1	{
+		font-weight: bold;
+		text-align: center;
+		color: #000000;
+	}
+
+section
+	{
+		/*float: right;*/
+		width: 80px;
+
+		border-width: 1px;
+		border-style: solid;
+
+		padding: 3px;
+		margin: 0;
+
+		position: absolute;
+		right: 5px;
+	}
+p
+	{
+		margin: 0;
+		margin-top: 30px;
+		padding: 10px;
+		clear: both;
+	}
+
+#mainPanel
+	{
+		width: 100%;
+		padding: 5px;
+		background-color:#FFFFFF;
+		position: relative;
+	}
+
+.panel
+	{
+		/*border-width: thin;
+		border-style: solid;*/
+		border-color: #FF9933;
+
+		background-color: #FFFFFF;
+
+		padding: 5px;
+
+		height: 200px;
+
+		position: relative;
+	}
+
+.subPanel
+	{
+		border-width: 1px;
+		border-style: solid;
+		border-color: black;
+
+		height: 100%;
+
+		/*overflow: auto;*/
+	}
+
+#sec
+	{
+		clear: both;
+		/*float: none;*/
+		border-width: unset;
+		border-style: none;
+		padding: unset;
+		margin: 0;
+		position: relative;
+	}
+
+.sec1
+	{
+		background-color: #FF9966;
+	}
+
+.sec2
+	{
+		background-color: #99CC00;
+	}
+
+.sec3
+	{
+		background-color: #006699;
+	}
+
+.psec1
+	{
+		padding: 0px;
+		margin: 0px;
+	}
+.psec2
+	{
+		padding: 0px;
+		margin: 0px;
+	}
+.psec3
+	{
+		padding: 0px;
+		margin: 0px;
+		color:  #FFFFFF;
+	}
+
+.pandiv1
+	{
+		background-color: #FFEBCC;
+	}
+.pandiv2
+	{
+		background-color: #D9F2D9;
+	}
+.pandiv3
+	{
+		background-color: #CCEEFF;
+	}
+
+/*LARGE DEVICES*/
+@media (min-width: 992px)
+	{
+		.width-LD-col
+			{
+				width: 33.33%;
+				float: left;
+				/*margin-right: auto;
+				margin-left: auto;*/
+			}
+	}
+
+/*MEDIUM DEVICES*/
+@media (min-width: 768px) and (max-width: 991px)
+	{
+		.width-MD-col1
+			{
+				width: 50%;
+				float: left;
+				/*margin-right: auto;
+				margin-left: auto;*/
+			}
+
+		.width-MD-col2
+			{
+				width: 100%;
+				float: left;
+				clear: both;
+				/*margin-right: auto;
+				margin-left: auto;*/
+			}
+	}
+
+/*SMALL DEVICES*/
+@media (max-width: 767px)
+	{
+		.width-SD-col
+			{
+				width: 100%;
+				float: left;
+				clear: both;
+				/*margin-right: auto;
+				margin-left: auto;*/
+			}
+	}
