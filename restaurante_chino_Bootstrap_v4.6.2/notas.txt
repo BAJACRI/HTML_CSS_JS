@@ -1,0 +1,9 @@
+browser-sync start --server --directory --files "*.*"
+
+PowerShell permisos:
+
+Get-ExecutionPolicy -List
+
+Set-ExecutionPolicy -ExecutionPolicy <PolicyName> -Scope <scope>
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
