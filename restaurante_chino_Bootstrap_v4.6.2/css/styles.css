@@ -26,11 +26,6 @@ body
 		margin-left: 0px;
 	}
 
-.navbar-brand
-	{
-		padding-top: 25px;
-	}
-
 	/* Restaurant name  */
 .navbar-brand h1
 	{
@@ -68,4 +63,59 @@ body
 .navbar-brand p span
 	{
 		vertical-align: middle;
+	}
+
+#nav-list .nav-link
+	{
+		color: #951C49;
+		text-align: center;
+	}
+
+#nav-list .nav-link i
+	{
+		font-size: 1.8em;
+	}
+
+#nav-list a:hover
+	{
+		background-color: #E7E7E7;
+	}
+
+.nav-item a
+	{
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	/* Phone number */
+#phone a
+	{
+		font-size: 1.8em;
+		padding-bottom: 0px;
+	}
+
+	/* We Deliver */
+#phone div
+	{
+		color: #557C3E;
+		text-align: right;
+		padding-right: 8px;
+	}
+
+.container button.navbar-toggler
+	{
+		border: 1px;
+		border-style: solid;
+		border-color: #61122F;
+
+		padding-top: 1px;
+		padding-bottom: 1px;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+
+button i
+	{
+		font-size: 1.5em;
+		color: #61122F;
 	}
