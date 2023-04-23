@@ -24,6 +24,8 @@
 		<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css\styles.css">
 
+		<script src="https://kit.fontawesome.com/067918302c.js" crossorigin="anonymous"></script>
+
 	</head>
 
 	<body>
@@ -34,42 +36,80 @@
 
 				<div class="container">
 
-					<div class="navbar-header">
+					<div class="navbar-brand">
 
-						<a href="index.html" class="float-start d-none d-lg-inline-block">
+						<a class="float-start d-none d-lg-inline-block" href="index.html">
 
-							<div id="logo-img" alt="Logo image"></div>
+							<div id="logo-img" class="" alt="Logo image"></div>
+
+						</a>
+
+						<a class="float-end" href="index.html">
+
+							<h1  class="">
+								David Chu's China Bistro
+							</h1>
 							
 						</a>
 
-						<div class="navbar-brand">
-
-							<a href="index.html">
-
-								<h1>
-									David Chu's China Bistro
-								</h1>
-								
-							</a>
-
-							<p>
-								<img src="images/star-k-logo.png" alt="Kosher certification">
-								<span>Kosher Certified</span>
-							</p>
-							
-						</div>
-
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationMenu" aria-controls="navigationMenu" aria-expanded="false" aria-label="Toggle navigation">
-							
-							<span class="navbar-toggler-icon"></span>
-
-						</button>
-
+						<p class="float-start">
+							<img src="images/star-k-logo.png" alt="Kosher certification">
+							<span>Kosher Certified</span>
+						</p>
+						
 					</div>
 
-				</div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationMenu" aria-controls="navigationMenu" aria-expanded="false" aria-label="Toggle navigation">
+						
+						<!-- <span class="navbar-toggler-icon"></span> -->
+						<i class="fa-solid fa-bars"></i>
 
-			</nav>
+					</button>
+
+					<div id="navigationMenu" class="collapse navbar-collapse justify-content-end">
+
+						<ul id="nav-list" class="navbar-nav mb-2 mb-lg-0">
+
+							<li class="nav-item">
+								<a class="nav-link" href="menu-categories.html" aria-current="page">
+									<span><i class="fa-solid fa-utensils"></i></span>
+									<br class="d-none d-md-inline-block">
+									Menu
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#" aria-current="page">
+									<span><i class="fa-solid fa-circle-info"></i></span>
+									<br class="d-none d-md-inline-block">
+									About
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#" aria-current="page">
+									<span><i class="fa-solid fa-certificate"></i></span>
+									<br class="d-none d-md-inline-block">
+									Awards
+								</a>
+							</li>
+
+							<li id="phone" class="nav-item d-none d-lg-inline-block">
+								<a class="nav-link" href="tel:410-602-5008" aria-current="page">
+									<span class="">410-602-5008</span>
+								</a>
+								<div class="">
+									*We Deliver
+								</div>
+							</li>
+
+						</ul>
+
+					</div> <!-- END OF id="navigationMenu" -->					
+
+				</div> <!-- END OF class="container" -->
+
+			</nav> <!-- END OF id="header-nav" -->
 
 		</header>
 

@@ -19,16 +19,8 @@ body
 		background: url('../images/restaurant-logo_large.png') no-repeat;
 		width: 150px;
 		height: 150px;
-		
-		margin-top: 10px;
-		margin-right: 15px;
-		margin-bottom: 10px;
-		margin-left: 0px;
-	}
 
-.navbar-brand
-	{
-		padding-top: 25px;
+		margin: 0px;
 	}
 
 	/* Restaurant name  */
@@ -53,7 +45,17 @@ body
 		text-decoration: none;
 	}
 
-	/* Kosher certified */
+.navbar-brand a:nth-child(2)
+	{
+		margin-top: 15px;
+	}
+
+.navbar-brand a:nth-child(2), .navbar-brand p
+	{
+		margin-left: 15px;
+	}
+
+	/* Star-K */
 .navbar-brand p
 	{
 		font-size: 0.7em;
@@ -62,10 +64,65 @@ body
 		text-transform: uppercase;
 		
 		margin-top: 15px;
+		
+		clear: right;
 	}
 
-	/* Star-K */
+	/* Kosher certified */
 .navbar-brand p span
 	{
 		vertical-align: middle;
+	}
+
+#nav-list a
+	{
+		color: #951C49;
+		text-align: center;
+	}
+
+#nav-list a:hover
+	{
+		background-color: #E7E7E7;
+	}
+
+#nav-list a span
+	{
+		font-size: 1.8em;
+	}
+
+#nav-list #phone
+	{
+		text-align: right;
+		line-height: normal;
+		padding-top: 3px;
+	}
+
+#nav-list #phone a
+	{
+		padding-bottom: 0px;
+		font-weight: 900;
+	}
+
+	/* We Deliver */
+#nav-list #phone div
+	{
+		color: #557C3E;
+		padding-right: 8px;
+	}
+
+.navbar-toggler
+	{
+		border-color: #61122F;
+		border-width: 2px;
+
+		font-size: 1.5em;
+		color: #61122F;
+
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+
+.navbar-toggler:focus
+	{
+		box-shadow: none;
 	}
