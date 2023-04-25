@@ -34,7 +34,7 @@ body
 		text-transform: uppercase;
 		text-shadow: 1px 1px 1px #222222;
 		
-		margin-top: 0px;
+		margin-top: 7px;
 		margin-bottom: 0px;
 		
 		line-height: 0.75;
@@ -100,7 +100,6 @@ body
 #nav-list #phone a
 	{
 		padding-bottom: 0px;
-		font-weight: 900;
 	}
 
 	/* We Deliver */
@@ -126,3 +125,105 @@ body
 	{
 		box-shadow: none;
 	}
+
+	/* Extra extra large */
+@media (min-width: 1400px)
+	{}
+
+	/* Extra large */
+@media (min-width: 1200px) and (max-width: 1399px)
+	{}
+
+	/* Large */
+@media (min-width: 992px) and (max-width: 1199px)
+	{
+		#logo-img
+			{
+				background: url('../images/restaurant-logo_medium.png') no-repeat;
+				width: 100px;
+				height: 100px;
+				margin-top: 5px;
+				margin-right: 5px;
+				margin-bottom: 5px;
+				margin-left: 0px;
+			}
+		#
+	}
+
+	/* Medium */
+@media (min-width: 768px) and (max-width: 991px)
+	{
+		.navbar-brand .float-end h1
+			{
+				margin-top: 0px;
+			}
+
+		.navbar-brand a:nth-child(2)
+			{
+				margin-top: 0px;
+				margin-left: 0px;
+			}
+
+		.navbar-brand p
+			{
+				margin-bottom: 0px;
+				margin-left: 0px;
+			}
+
+		.navbar-brand
+			{
+				padding-top: 0px;
+				padding-bottom: 0px;
+
+				margin-top: 20px;
+			}
+
+		#header-nav .container
+			{
+				flex-wrap: wrap;
+			}
+
+		#nav-list li a
+			{
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+
+		#navigationMenu li
+			{
+				margin-bottom: 0px;
+			}
+	}
+
+	/* Small */
+@media (max-width: 767px)
+	{
+		.navbar-brand
+			{
+				padding-top: 10px;
+/*				height: 80px;*/
+			}
+
+		.navbar-brand h1
+			{
+				font-size: 4vw;
+				margin-top: 0px;
+			}
+
+		.navbar-brand a:nth-child(2)
+			{
+				margin-top: 0px;
+			}
+
+		#nav-list a span
+			{
+				font-size: 1em;
+				margin-right: 5px;
+			}
+	}
+
+	/* Extra small */
+/*@media (max-width: 575px)
+	{
+
+	}*/
