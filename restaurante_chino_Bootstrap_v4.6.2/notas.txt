@@ -1,6 +1,7 @@
 browser-sync start --server --directory --files "*.*"
 browser-sync start --server --directory --files "**/*"
 
+
 PowerShell permisos:
 
 Get-ExecutionPolicy -List

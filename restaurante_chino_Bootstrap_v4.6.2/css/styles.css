@@ -57,6 +57,7 @@ body
 		text-transform: uppercase;
 		
 		margin-top: 15px;
+		margin-bottom: 0px;
 	}
 
 	/* Star-K */
@@ -119,3 +120,76 @@ button i
 		font-size: 1.5em;
 		color: #61122F;
 	}
+
+/********** Extra large devices only **********/
+@media (min-width: 1200px)
+	{
+
+	}
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px)
+	{
+		#logo-img
+			{
+				background: url('../images/restaurant-logo_medium.png') no-repeat;
+				width: 100px;
+				height: 100px;
+				margin-top: 5px;
+				margin-right: 5px;
+				margin-bottom: 5px;
+				margin-left: 0px;
+			}
+	}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px)
+	{
+		.navbar-header
+			{
+				padding-bottom: 0px;
+			}
+
+		.navbar-header div, #nav-list
+			{
+				font-size: 0.85em;
+			}
+	}
+
+/********** Small devices only **********/
+@media (max-width: 767px)
+	{
+		.navbar-brand
+			{
+				padding-top: 10px;
+				height: 80px;
+			}
+
+		.navbar-brand h1
+			{
+				padding-top: 10px;
+				font-size: 4.5vw;	/* 1vw = 1% of viewport width */
+			}
+
+		.navbar-brand p
+			{
+				font-size: 0.5em;
+				margin-top: 12px;
+			}
+		.navbar-brand p img
+			{
+				height: 20px;
+			}
+
+		#nav-list .nav-link i
+			{
+				font-size: 1.1em;
+				margin-right: 5px;
+			}
+	}
+
+/********** Extra small devices only **********/
+/*@media (min-width: 575px)
+	{
+
+	}*/
