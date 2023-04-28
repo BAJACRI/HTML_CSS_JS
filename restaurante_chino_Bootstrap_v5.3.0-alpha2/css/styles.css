@@ -7,6 +7,11 @@ body
 		background-color: #61122F;
 	}
 
+header
+	{
+		margin-bottom: 20px;
+	}
+
 /** HEADER **/
 #header-nav
 	{
@@ -126,13 +131,43 @@ body
 		box-shadow: none;
 	}
 
+
+#main-content #jumbotron
+	{
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+
+.container #jumbotron
+	{
+		box-shadow: 0px 0px 50px #3F0C1F;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #3F0C1F;
+	}
+
+/****** Media queries ******/
+
 	/* Extra extra large */
 @media (min-width: 1400px)
-	{}
+	{
+		.container
+			{
+				max-width: 1140px;
+			}
+	}
 
 	/* Extra large */
-@media (min-width: 1200px) and (max-width: 1399px)
-	{}
+/*@media (min-width: 1200px) and (max-width: 1399px)*/
+@media (min-width: 1200px)
+	{
+		#jumbotron
+			{
+				background: url(../images/jumbotron_1200.jpg) no-repeat;
+				height: 675px;
+			}
+	}
 
 	/* Large */
 @media (min-width: 992px) and (max-width: 1199px)
@@ -147,7 +182,12 @@ body
 				margin-bottom: 5px;
 				margin-left: 0px;
 			}
-		#
+		
+		#jumbotron
+			{
+				background: url(../images/jumbotron_992.jpg) no-repeat;
+				height: 558px;
+			}
 	}
 
 	/* Medium */
@@ -193,20 +233,26 @@ body
 			{
 				margin-bottom: 0px;
 			}
+
+		#jumbotron
+			{
+				background: url(../images/jumbotron_768.jpg) no-repeat;
+				height: 432px;
+			}
 	}
 
 	/* Small */
+/*@media (min-width: 576px) and (max-width: 767px)*/
 @media (max-width: 767px)
 	{
 		.navbar-brand
 			{
 				padding-top: 10px;
-/*				height: 80px;*/
 			}
 
 		.navbar-brand h1
 			{
-				font-size: 4vw;
+				font-size: 5vw;
 				margin-top: 0px;
 			}
 
@@ -220,10 +266,53 @@ body
 				font-size: 1em;
 				margin-right: 5px;
 			}
+
+		.navbar-brand p
+			{
+				font-size: .6em;
+			}
+
+		#call-btn > a
+			{
+				font-size: 1.5em;
+				color: #951C49;
+
+				display: block;
+
+				background-color: #F6B319;
+
+				margin-top: 0px;
+				margin-bottom: 0px;
+				margin-right: 20px;
+				margin-left: 20px;
+
+				padding: 10px;
+
+				border: 2px solid #FFFFFF;
+			}
+
+		#xs-deliver
+			{
+				font-size: 0.7em;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+
+				margin-top: 5px;
+			}
+
+		#header-nav .container
+			{
+				max-width: unset;
+			}
+
+		#main-content
+			{
+				max-width: unset;
+			}
 	}
 
 	/* Extra small */
 /*@media (max-width: 575px)
 	{
-
+		
 	}*/
