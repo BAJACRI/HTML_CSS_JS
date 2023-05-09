@@ -90,9 +90,9 @@ header
 		background-color: #E7E7E7;
 	}
 
-#nav-list a span
+#nav-list a
 	{
-		font-size: 1.8em;
+		font-size: 1.2em;
 	}
 
 #nav-list #phone
@@ -134,8 +134,8 @@ header
 
 #main-content #jumbotron
 	{
-		margin-left: 8px;
-		margin-right: 8px;
+		/*margin-left: 8px;
+		margin-right: 8px;*/
 	}
 
 
@@ -145,6 +145,55 @@ header
 		border-width: 2px;
 		border-style: solid;
 		border-color: #3F0C1F;
+
+/*		margin-bottom: 20px;*/
+	}
+
+#menu-tile, #specials-tile, #map-tile
+	{
+		height: 250px;
+		width: 100%;
+
+/*		margin-bottom: ;*/
+
+		position: relative;
+
+		border-width: 2px;
+		border-style: solid;
+		border-color: #3F0C1F;
+
+		overflow: hidden;
+	}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover
+	{
+		box-shadow: 0px 1px 5px 1px #CCCCCC;
+	}
+
+#menu-tile
+	{
+		background: url('../images/menu-tile.jpg') no-repeat;
+		background-position: center;
+	}
+
+#specials-tile
+	{
+		background: url('../images/specials-tile.jpg') no-repeat;
+		background-position: center;
+	}
+
+#menu-tile span, #specials-tile span, #map-tile span
+	{
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		width: 100%;
+		text-align: center;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		background-color: #000;
+		color: #FFFFFF;
+		opacity: 0.8;
 	}
 
 /****** Media queries ******/
@@ -269,7 +318,13 @@ header
 
 		.navbar-brand p
 			{
-				font-size: .6em;
+				font-size: .55em;
+			}
+
+		.navbar-brand p img
+			{
+				height: 25px;
+				width: 25px;
 			}
 
 		#call-btn > a
@@ -316,3 +371,23 @@ header
 	{
 		
 	}*/
+
+/********** Special case **********/
+@media (min-width: 390px) and (max-width: 767px)
+	{
+		#menu-tile, #specials-tile
+			{
+				width: 365px;
+
+				margin-right: auto;
+				margin-left: auto;
+			}
+	}
+
+@media (max-width: 390px)
+	{
+		.navbar-toggler
+			{
+				font-size: 1.3em;
+			}
+	}
