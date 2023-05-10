@@ -1,3 +1,10 @@
+/*
+  ╔══════════════╗
+  ║              ║
+  ║     BODY     ║
+  ║              ║
+  ╚══════════════╝
+*/
 body
 	{
 		font-family: 'Oxygen', sans-serif;
@@ -7,7 +14,14 @@ body
 		background-color: #61122F;
 	}
 
-/** HEADER **/
+
+/*
+  ╔════════════════╗
+  ║                ║
+  ║     HEADER     ║
+  ║                ║
+  ╚════════════════╝
+*/
 header
 	{
 		margin-bottom: 20px;
@@ -131,6 +145,14 @@ button i
 		color: #61122F;
 	}
 
+
+/*
+  ╔══════════════════════╗
+  ║                      ║
+  ║     MAIN CONTENT     ║
+  ║                      ║
+  ╚══════════════════════╝
+*/
 .container .jumbotron
 	{
 		box-shadow: 0px 0px 50px #3F0C1F;
@@ -190,6 +212,58 @@ button i
 		background-color: #000000;
 
 		opacity: 0.8;
+	}
+
+
+/*
+  ╔════════════════╗
+  ║                ║
+  ║     FOOTER     ║
+  ║                ║
+  ╚════════════════╝
+*/
+.footer-content
+	{
+		/*margin-top: 30px;
+		
+		padding-top: 35px;
+		padding-bottom: 30px;*/
+
+		background-color: #222222;
+
+/*		border-top: 0px;*/
+	}
+
+.footer-content section
+	{
+		font-size: 0.9em;
+	}
+
+.footer-content hr
+	{
+		background-color: antiquewhite;
+	}
+
+#hours > span, #address > span
+	{
+		font-size: 1.4em;
+	}
+
+#address p
+	{
+		color: #557C3E;
+		font-size: 0.8em;
+	}
+
+#testimonials
+	{
+		font-style: italic;
+		font-size: 0.95em;
+	}
+
+#testimonials p:nth-child(2)
+	{
+/*		margin-top: 25px;*/
 	}
 
 /********** Extra large devices only **********/
@@ -390,5 +464,13 @@ button i
 
 				margin-right: auto;
 				margin-left: auto;
+			}
+	}
+
+@media (max-width: 767px)
+	{
+		.footer-content hr
+			{
+				width: 50%;
 			}
 	}
