@@ -1,3 +1,10 @@
+/*
+  ╔══════════════╗
+  ║              ║
+  ║     BODY     ║
+  ║              ║
+  ╚══════════════╝
+*/
 body
 	{
 		font-family: 'Oxygen', sans-serif;
@@ -7,6 +14,14 @@ body
 		background-color: #61122F;
 	}
 
+
+/*
+  ╔════════════════╗
+  ║                ║
+  ║     HEADER     ║
+  ║                ║
+  ╚════════════════╝
+*/
 header
 	{
 		margin-bottom: 20px;
@@ -132,10 +147,16 @@ header
 	}
 
 
-#main-content #jumbotron
+/*
+  ╔══════════════════════╗
+  ║                      ║
+  ║     MAIN CONTENT     ║
+  ║                      ║
+  ╚══════════════════════╝
+*/
+#main-content
 	{
-		/*margin-left: 8px;
-		margin-right: 8px;*/
+		padding-bottom: 25px;
 	}
 
 
@@ -153,8 +174,6 @@ header
 	{
 		height: 250px;
 		width: 100%;
-
-/*		margin-bottom: ;*/
 
 		position: relative;
 
@@ -196,7 +215,49 @@ header
 		opacity: 0.8;
 	}
 
-/****** Media queries ******/
+
+/*
+  ╔════════════════╗
+  ║                ║
+  ║     FOOTER     ║
+  ║                ║
+  ╚════════════════╝
+*/
+
+#footer-content
+	{
+		background-color: #222222;
+	}
+
+#footer-content section, #footer-content section > span
+	{
+		font-size: 0.9em;
+	}
+
+#footer-content section > span, #footer-content section > span
+	{
+		font-size: 1.2em;
+		margin-bottom: 10px;
+	}
+
+#address p
+	{
+		color: #557C3E;
+		font-size: 0.9em;
+	}
+
+#footer-content #testimonials
+	{
+		font-size: 0.95em;
+	}
+
+/*
+  ╔═══════════════════════╗
+  ║                       ║
+  ║     MEDIA QUERIES     ║
+  ║                       ║
+  ╚═══════════════════════╝
+*/
 
 	/* Extra extra large */
 @media (min-width: 1400px)
