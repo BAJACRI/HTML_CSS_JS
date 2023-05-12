@@ -266,6 +266,58 @@ button i
 /*		margin-top: 25px;*/
 	}
 
+
+/*
+  ╔═════════════════════════╗
+  ║                         ║
+  ║     Menu Categories     ║
+  ║                         ║
+  ╚═════════════════════════╝
+*/
+.category-tile
+	{
+		position: relative;
+		width: 200px;
+
+		margin: 20px;
+	}
+
+#menu-categories-title
+	{
+		margin-top: 20px;
+	}
+
+#menu-categories-title + div
+	{
+		margin-bottom: 50px;
+	}
+
+.category-tile span
+		{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			width: 100%;
+
+			background-color: #000000;
+			opacity: 0.8;
+
+			font-size: 1.2em;
+			color: #FFFFFF;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+
+/*
+  ╔═══════════════════════╗
+  ║                       ║
+  ║     MEDIA QUERIES     ║
+  ║                       ║
+  ╚═══════════════════════╝
+*/
+
 /********** Extra large devices only **********/
 @media (min-width: 1200px)
 	{
