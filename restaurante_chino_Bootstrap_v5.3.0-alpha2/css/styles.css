@@ -251,6 +251,40 @@ header
 		font-size: 0.95em;
 	}
 
+
+/*
+  ╔═════════════════════════╗
+  ║                         ║
+  ║     Menu Categories     ║
+  ║                         ║
+  ╚═════════════════════════╝
+*/
+#categories-panel div:nth-child(3) div div
+	{
+		height: 200px;
+		width: 200px;
+	}
+
+
+
+
+.category-tile span
+	{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		background-color: #000000;
+		opacity: 0.8;
+
+		width: 100%;
+
+		font-size: 1.2em;
+		color: #FFFFFF;
+		text-transform: uppercase;
+	}
+
+
 /*
   ╔═══════════════════════╗
   ║                       ║
@@ -428,10 +462,10 @@ header
 	}
 
 	/* Extra small */
-/*@media (max-width: 575px)
+@media (max-width: 575px)
 	{
-		
-	}*/
+
+	}
 
 /********** Special case **********/
 @media (min-width: 390px) and (max-width: 767px)
@@ -443,6 +477,24 @@ header
 				margin-right: auto;
 				margin-left: auto;
 			}
+	}
+
+@media (min-width: 475px) and (max-width: 767px)
+	{
+		.row-cols-1 > *
+			{
+				flex: 0 0 auto;
+				width: 50%;
+			}
+	}
+
+@media (max-width: 474px)
+	{
+		#categories-panel div:nth-child(3) div div
+		{
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 @media (max-width: 390px)
