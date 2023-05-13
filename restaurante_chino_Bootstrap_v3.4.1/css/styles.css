@@ -265,10 +265,14 @@ body
 .category-tile
 	{
 		position: relative;
+
 		border: 2px solid #3F0C1F;
+		
 		overflow: hidden;
+		
 		width: 200px;
 		height: 200px;
+		
 		margin: 0 auto 15px;
 	}
 
@@ -294,6 +298,76 @@ body
 #menu-categories-title + div
 	{
 		margin-bottom: 50px;
+	}
+
+
+/*
+  ╔══════════════════════════════╗
+  ║                              ║
+  ║     SINGLE MENU CATEGORY     ║
+  ║                              ║
+  ╚══════════════════════════════╝
+*/
+
+.menu-item-tile
+	{
+		margin-bottom: 25px;
+	}
+
+.menu-item-tile hr
+	{
+		width: 80%;
+	}
+
+.menu-item-tile .menu-item-price
+	{
+		font-size: 1.1em;
+		text-align: right;
+		margin-top: -15px;
+		margin-right: -15px;
+	}
+
+.menu-item-tile .menu-item-price span
+	{
+		font-size: 0.6em;
+	}
+
+.menu-item-photo
+	{
+		position: relative;
+		border: 2px solid #3F0C1F;
+		overflow: hidden;
+		padding: 0px;
+		margin-right: -15px;
+		margin-left: auto;
+		margin-bottom: 20px;
+		max-width: 250px;
+	}
+
+.menu-item-photo div
+	{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 80px;
+		background-color: #557C3E;
+		text-align: center;
+	}
+
+.menu-item-description
+	{
+		padding-right: 30px;
+	}
+
+h3.menu-item-title
+	{
+		margin: 0px 0px 10px;
+	}
+
+.menu-item-details
+	{
+		font-size: 0.9em;
+		font-style: italic;
 	}
 
 
@@ -445,6 +519,21 @@ body
 		.panel-footer section hr
 			{
 				width: 50%;
+			}
+
+		.menu-item-photo
+			{
+				margin-right: auto;
+			}
+
+		.menu-item-tile .menu-item-price
+			{
+				text-align: center;
+			}
+
+		.menu-item-description
+			{
+				text-align: center;
 			}
 
 	} /* END OF @media (max-width: 767px) */
