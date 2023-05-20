@@ -127,6 +127,11 @@ header
 		padding-right: 8px;
 	}
 
+body > .container
+	{
+		margin-bottom: 25px;
+	}
+
 .container button.navbar-toggler
 	{
 		border: 1px;
@@ -311,6 +316,81 @@ button i
 
 
 /*
+  ╔═════════════════════════╗
+  ║                         ║
+  ║     Single Category     ║
+  ║                         ║
+  ╚═════════════════════════╝
+*/
+.item-photo
+	{
+		position: relative;
+
+		border: 2px solid #3F0C1F;
+		overflow: hidden;
+
+		max-width: 250px;
+
+		margin-left: auto;
+
+		/*margin-right: -15px;
+		*/
+	}
+
+.item-photo div
+	{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		width: 80px;
+
+		background-color: #557C3E;
+
+		text-align: center;
+	}
+
+.item-price
+	{
+		font-size: 1em;
+		text-align: right;
+	}
+
+.item-price span
+	{
+		font-size: 0.6em;
+	}
+
+.card-details
+	{
+		margin-bottom: 0px;
+
+		font-size: 0.9em;
+		font-style: italic;
+
+		text-align: left;
+	}
+
+h3.card-title
+	{
+		font-size: 1.5em;
+		margin-bottom: 10px;
+	}
+
+.menu-item-tile hr
+	{
+		border-style: solid;
+		border-color: ghostwhite;
+
+		width: 80%;
+	}
+
+.menu-item-tile
+	{
+		margin-bottom: 30px;
+	}
+
+/*
   ╔═══════════════════════╗
   ║                       ║
   ║     MEDIA QUERIES     ║
@@ -327,6 +407,7 @@ button i
 				height: 675px;
 			}
 	}
+
 
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px)
@@ -349,6 +430,7 @@ button i
 			}
 	}
 
+
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px)
 	{
@@ -367,7 +449,18 @@ button i
 				background: url(../images/jumbotron_768.jpg) no-repeat;
 				height: 432px;
 			}
+
+		.menu-items-tiles
+				{
+					flex-direction: column;
+				}
+
+		.menu-item-tile
+				{
+					margin-bottom: 30px;
+				}
 	}
+
 
 /********** Small devices only **********/
 @media (min-width: 576px) and (max-width: 767px)
@@ -440,6 +533,7 @@ button i
 			}
 	}
 
+
 /********** Extra small devices only **********/
 @media (max-width: 575px)
 	{
@@ -460,6 +554,7 @@ button i
 				font-size: 0.5em;
 				margin-top: 12px;
 			}
+
 		.navbar-brand p img
 			{
 				height: 20px;
@@ -508,6 +603,14 @@ button i
 
 
 /********** Special case **********/
+@media (min-width: 992px)
+	{
+		.card-graphics
+			{
+				padding-right: 0px;
+			}
+	}
+
 @media (min-width: 390px) and (max-width: 767px)
 	{
 		#menu-tile, #specials-tile
@@ -525,4 +628,51 @@ button i
 			{
 				width: 50%;
 			}
+
+			.menu-items-tiles, .item-card
+			{
+				flex-direction: column;
+			}
+/*
+			.menu-item-tile
+				{
+					margin-bottom: 50px;
+				}
+*/
+			.item-card
+				{
+					align-items: center;
+				}
+
+			.card-graphics
+				{
+						max-width: 100%;
+				}
+
+			.card-description
+				{
+						max-width: 100%;
+				}
+
+			.item-photo
+				{
+					margin-right: auto;
+					margin-left: auto;
+				}
+
+			.item-price
+				{
+					text-align: center;
+				}
+
+				.card-title
+					{
+						text-align: center;
+						margin-top: 10px;
+					}
+
+				.card-details
+					{
+						text-align: justify;
+					}
 	}
