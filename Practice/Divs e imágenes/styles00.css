@@ -1,0 +1,86 @@
+body
+	{
+		padding: 0px;
+		margin: 0px;
+
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	/* Para los DIVS contenedores  */
+body > div
+	{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+
+/*		height: 400px;*/
+
+/*		overflow: hidden;*/
+	}
+
+#cuadroIzquierdo
+	{
+		border-style: solid;
+		border-color: green;
+
+/*		height: 400px;*/
+
+/*		padding: 10px;*/
+		padding-top: auto;
+		padding-bottom: auto;
+	}
+
+#cuadroDerecho
+	{
+		border-style: solid;
+		border-color: orangered;
+
+/*		padding: 10px;*/
+		padding-top: auto;
+		padding-bottom: auto;
+	}
+
+img
+	{
+		display: block;
+		
+		/*width: 250px;
+		height: 150px;*/
+
+		margin-right: auto;
+		margin-left: auto;
+
+/*		float: left;*/
+
+
+		/*margin-top: auto;
+		margin-bottom: auto;*/
+
+		
+/*		vertical-align: middle;*/
+
+/*		background-image: url('B-1.jpg');*/
+
+
+
+
+		
+		/*overflow-clip-margin: unset;
+		overflow-x: unset;
+		overflow-y: unset;*/
+	}
+
+#divImagen
+	{
+		background-image: url('B-1.jpg');
+
+		width: 100%;
+		height: 200px;
+
+		/*margin-right: auto;
+		margin-left: auto;*/
+
+		background-position: top right;
+		background-repeat: no-repeat;
+	}

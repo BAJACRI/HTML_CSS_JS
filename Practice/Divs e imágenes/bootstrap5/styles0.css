@@ -1,0 +1,47 @@
+/*
+  ╔══════════════╗
+  ║              ║
+  ║     BODY     ║
+  ║              ║
+  ╚══════════════╝
+*/
+.container
+	{
+		background-color: lightseagreen;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+
+    color: white;
+	}
+
+.container > div
+  {
+    background-color: bisque;
+    border-color: crimson;
+    border-style: solid;
+    border-width: 4px;
+  }
+
+.container > div > div
+  {
+    background-color: olivedrab;
+    border-color: gold;
+    border-style: solid;
+    border-width: 3px;
+/*    overflow: hidden;*/
+  }
+
+.container .cuadrito
+  {
+    background-color: midnightblue;
+    
+    height: 200px;
+    width: 200px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+    vertical-align: middle;
+  }
