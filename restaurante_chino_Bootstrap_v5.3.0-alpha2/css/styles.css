@@ -493,7 +493,7 @@ h3.card-title
 
 		.navbar-brand h1
 			{
-				font-size: 5vw; /* 1vw = 1% of viewport width */
+				font-size: 4.9vw; /* 1vw = 1% of viewport width */
 				margin-top: 0px;
 			}
 
