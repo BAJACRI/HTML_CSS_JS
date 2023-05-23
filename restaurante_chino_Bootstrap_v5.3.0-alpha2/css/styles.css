@@ -105,6 +105,11 @@ header
 		background-color: #E7E7E7;
 	}
 
+#nav-list .nav-item .nav-link.active
+	{
+		background-color: #E7E7E7;
+	}
+
 #nav-list a
 	{
 		font-size: 1.2em;
@@ -265,9 +270,6 @@ header
 		width: 200px;
 	}
 
-
-
-
 .category-tile span
 	{
 		position: absolute;
@@ -284,6 +286,96 @@ header
 		text-transform: uppercase;
 	}
 
+#menu-categories-title
+	{
+		margin-top: 20px;
+
+		font-size: 2em;
+	}
+
+#menu-categories-title + div
+	{
+		margin-bottom: 50px;
+	}
+
+/*
+  ╔═════════════════════════╗
+  ║                         ║
+  ║     Single Category     ║
+  ║                         ║
+  ╚═════════════════════════╝
+*/
+.item-photo
+	{
+		position: relative;
+
+		border-width: 2px;
+		border-style: solid;
+		border-color: #3F0C1F;
+
+/*		overflow: hidden;*/
+
+		max-width: 250px;
+
+/*		margin-left: auto;*/
+	}
+
+.item-photo div
+	{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		width: 80px;
+
+		background-color: #557C3E;
+
+		text-align: center;
+	}
+
+.item-price
+	{
+		text-align: right;
+	}
+
+.item-price span
+	{
+		font-size: 0.6em;
+	}
+
+.card-details
+	{
+		margin-bottom: 0px;
+
+		font-size: 0.9em;
+		font-style: italic;
+
+		text-align: left;
+	}
+
+h3.card-title
+	{
+		font-size: 1.4em;
+		margin-bottom: 10px;
+	}
+
+.menu-item-tile hr
+	{
+		border-style: solid;
+		border-color: ghostwhite;
+
+		width: 80%;
+
+		opacity: 1;
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+.menu-item-tile
+	{
+		margin-bottom: 30px;
+	}
 
 /*
   ╔═══════════════════════╗
@@ -382,6 +474,11 @@ header
 			{
 				background: url(../images/jumbotron_768.jpg) no-repeat;
 				height: 432px;
+			}
+
+		.menu-items-tiles
+			{
+				flex-direction: column;
 			}
 	}
 
@@ -502,5 +599,50 @@ header
 		.navbar-toggler
 			{
 				font-size: 1.3em;
+			}
+	}
+
+@media (max-width: 767px)
+	{
+		.menu-items-tiles, .item-card
+			{
+				flex-direction: column;
+			}
+
+		.item-card
+			{
+				align-items: center;
+			}
+
+		.card-graphics
+			{
+				width: 100%;
+			}
+
+		.card-description
+			{
+				width: 100%;
+			}
+
+		.item-photo
+			{
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+		.item-price
+			{
+				text-align: center;
+			}
+
+		.card-title
+			{
+				text-align: center;
+				margin-top: 10px;
+			}
+
+		.card-details
+			{
+				text-align: justify;
 			}
 	}
