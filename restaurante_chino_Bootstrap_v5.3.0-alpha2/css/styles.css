@@ -600,6 +600,11 @@ h3.card-title
 			{
 				font-size: 1.3em;
 			}
+
+		#header-nav .container
+			{
+				justify-content: normal;
+			}
 	}
 
 @media (max-width: 767px)
