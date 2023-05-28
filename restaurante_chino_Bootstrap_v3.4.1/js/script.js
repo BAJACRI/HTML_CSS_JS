@@ -12,6 +12,19 @@ $( function ()
 							}
 					}
 			);
+
+		//TENGO QUE AGREGAR ESTO
+		// In Firefox and Safari, the click event doesn't retain the focus
+		// on the clicked button. Therefore, the blur event will not fire on
+		// user clicking somewhere else in the page and the blur event handler
+		// which is set up above will not be called.
+		// Refer to issue #28 in the repo.
+		// Solution: force focus on the element that the click event fired on
+
+		// $("#navbarToggle").click(function (event) {
+		// $(event.target).focus();
+		// });
+		
 	}
 );
 
@@ -28,7 +41,7 @@ $( function ()
 		var insertHtml = function( selector, html )
 							{
 								var targetElem = document.querySelector(selector);
-								targetElem.insertHtml = html;
+								targetElem.innerHTML = html;
 							};
 
 		// Show loading icon inside element identified by 'selector'
@@ -50,7 +63,7 @@ $( function ()
 									var propToReplace = "{{" + propName + "}}";
 									string = string.replace( new RegExp( propToReplace, "g" ), propValue );
 									return string;
-								}
+								};
 
 		// On page load (before images or CSS)
 		document.addEventListener( "DOMContentLoaded",
@@ -114,7 +127,7 @@ $( function ()
 						// Insert category values
 						var html = categoryHtml;
 						var name = "" + categories[i].name;
-						var short_name = "" + categories[i].short_name;
+						var short_name = categories[i].short_name;
 
 						html = insertProperty( html, "name", name );
 						html = insertProperty( html, "short_name", short_name );
