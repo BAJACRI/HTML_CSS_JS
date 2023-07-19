@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 //
 // TODO: STEP 1: Substitute [...] below with the *value* of the function buildAndShowHomeHTML,
 // so it can be called when server responds with the categories data.
-console.log("Paso 0");
+
 // *** start ***
 // On first load, show home view
 showLoading("#main-content");
@@ -118,7 +118,7 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // var homeHtmlToInsertIntoMainPage = ....
-      var homeHtmlToInsertIntoMainPage = insertProperty( homeHtml, "randomCategoryShortName", "\'" + chosenCategoryShortName + "\'" );
+      var homeHtmlToInsertIntoMainPage = insertProperty( homeHtml, "randomCategoryShortName", "\'" + chosenCategoryShortName.short_name + "\'" );
 
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
